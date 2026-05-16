@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Bilbo+Swash+Caps&family=Onest:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Artifika", serif;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    border-radius: 100%;
+    filter: drop-shadow(2px 2px 4px #000);
+    transition: 0.6s;
+}
+
+/* Estilo do cabeçalho */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999999;
+    padding: 40px 0;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: #000 2px 3px 2px;
+    transition: 0.8s;
+}
+
+.btn-contato button {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #6286b45b;
+    border: 2px solid #6285b4;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    border-radius: 8px;
+    transition: 0.8s;
+    box-shadow: #000 3px 3px 5px;
+}
+
+.btn-contato button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6285b4;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn-contato button:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-contato button:hover {
+    transform: scale(110%);
+    width: 160px;
+}
+
+#logo:hover {
+    transform: scale(120%);
+}
+
+#inicio {
+    color: transparent;
+    font-weight: 500;
+    font-size: 12px;
+    transition: 0.8s;
+    margin-left: 130px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+#inicio.mostrar {
+    color: #fff;
+    text-shadow: #000 2px 3px 2px;
+    font-size: 20px;
+}
+
+
+nav.menu ul li a:hover {
+    font-size: 26px;
+}
+
+/* Estilo do slider */
+
+.slider {
+    height: 100vh;
+    position: relative;
+}
+
+.slider .slider-conteiner .slider-box {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.slider .slider-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slider-box:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #010108f3, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider .slider-box .texto-slider {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    color: #fff;
+    z-index: 1;
+    width: 80%;
+    max-width: 600px;
+}
+
+.slider .slider-box .texto-slider h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+@keyframes animatexto {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slider .slider-box.ativo h2, 
+.slider .slider-box.ativo p {
+    transform: translateY(80px);
+    opacity: 0;
+    animation: animatexto 1s ease-in-out 0.5s forwards;
+}
+
+.slider .slider-box.ativo h2 {
+    animation-delay: 0.7s;
+}
+
+.slider-conteiner .slider-box.ativo {
+    opacity: 1;
+    z-index: 11;
+}
+
+/* Estilo das setas */
+
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 22;
+}
+
+.setas button {
+    width: 40px;
+    height: 40px;
+    background-color: #747474;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.setas button:hover {
+    background-color: #fff;
+    transform: scale(110%);
+}
+
+/* Estilo dos botões de navegação */
+
+.btn-nav-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-nav-box .btn-nav {
+    width: 30px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-nav-box .btn-nav:hover {
+    background-color: #fff;
+    transform: scale(112%);
+}
+
+.btn-nav-box .btn-nav.ativo {
+    background-color: #fff;
+}

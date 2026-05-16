@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- menu -->
+
+    <header>
+
+        <div class="interface">
+
+            <div class="logotipo">
+                <a href="index.html"><img id="logo" src="assets/AF.jpeg"></a>
+            </div> 
+
+            <p id="inicio">Início</p>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="sobre.html">Quem somos</a></li>
+                    <li><a href="#">Seviços</a></li>
+                    <li><a href="#">Pacientes</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+        </div> <!-- interface -->
+
+    </header>
+
+    <section class="slider">
+
+        <div class="interface">
+
+            <!-- imagens -->
+
+            <div class="slider-conteiner">
+                
+                <div class="slider-box ativo">
+                    <img src="assets/1.jpeg" alt="">
+                    <div class="texto-slider">
+                        <h2>Somos <br> ANIMAL EM FOCO</h2>
+                        <p>Nascemos da paixão pelo cuidado com quem mais precisa, buscando salvar vidas, uma pata de cada vez... </p>
+                    </div>
+                </div>
+
+                <div class="slider-box">
+                    <img src="assets/2.jpeg" alt="slide 2">
+                    <div class="texto-slider">
+                        <h2>Medicina Veterinária</h2>
+                        <p>Para nós, muito mais que uma profissão apenas, vocação, entrega, dedicação e cuidado
+                        para garantir que nossos amigos de quatro patas recebam o melhor cuidado possível, 
+                        contribuindo para a felicidade e saúde de todos os seres vivos! </p>
+                    </div>
+                </div>
+
+                <div class="slider-box">
+                    <img src="assets/3.jpeg" alt="slide 3">
+                    <div class="texto-slider">
+                        <h2>Slide 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, ea reprehenderit! 
+                        Modi in fuga vero odio quis natus facere labore laudantium. </p>
+                    </div>
+                </div>
+
+                <div class="slider-box">
+                    <img src="assets/4.jpg" alt="slide 4">
+                    <div class="texto-slider">
+                        <h2>Slide 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, ea reprehenderit! 
+                        Modi in fuga vero odio quis natus facere labore laudantium. </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- setas -->
+
+            <div class="setas">
+                <button id="anterior"><i class="bi bi-caret-left"></i></button>
+                <button id="posterior"><i class="bi bi-caret-right"></i></button>
+            </div>
+
+            <!-- botões de navegação -->
+
+            <div class="btn-nav-box">
+
+                <div class="btn-nav ativo"></div>
+                <div class="btn-nav"></div>
+                <div class="btn-nav"></div>
+                <div class="btn-nav"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
