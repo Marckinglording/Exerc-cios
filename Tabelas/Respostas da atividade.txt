@@ -1,0 +1,23 @@
+
+
+Resposta Atividade 1:
+ VFFV
+
+Resposta Atividade 2:
+<img src="casa123.jpg">
+
+Resposta Atividade 3:
+<TR></TR><TD></TD>
+
+Resposta Atividade 4: 
+(<b>)Mostra um texto em negrito.
+(<p>)Define um parágrafo.
+(<li>)Define um ítem em uma lista
+(<a>)Define um link para outro documento.
+(<tr>)Define uma linha em uma tabela
+
+Resposta Atividade 5:
+Alternativa "d"
+
+Resposta Atividade 6:
+Alternativa "a"
