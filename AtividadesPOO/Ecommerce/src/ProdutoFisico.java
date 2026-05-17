@@ -12,7 +12,7 @@ public class ProdutoFisico extends Produto{
 
     @Override
     public double calcularPrecoFinal() {
-        return getPrecobase() + (getPeso() * fretePorKg)
+        return getPrecoBase() + (getPeso() * fretePorKg);
     }
 
 }
