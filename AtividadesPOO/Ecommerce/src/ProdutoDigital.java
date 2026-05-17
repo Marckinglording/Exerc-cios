@@ -2,7 +2,7 @@ package AtividadesPOO.Ecommerce.src;
 
 public class ProdutoDigital extends Produto {
 
-    private double taxaDeDownload = 2.0;
+    private static final double taxaDeDownload = 3.0;
     
     public ProdutoDigital(String nome, double precoBase, double peso) {
 
