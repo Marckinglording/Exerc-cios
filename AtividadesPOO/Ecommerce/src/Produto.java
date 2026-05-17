@@ -14,6 +14,10 @@ public class Produto {
 
     }
 
+    public double calcularPrecoFinal() {
+        return this.precoBase;
+    }
+
     public String getNome() {
         return nome;
     }
