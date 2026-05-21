@@ -9,7 +9,7 @@ public class Peao extends Peca {
         if(novoY == (getPosY() + 1) && novoX == getPosX()) {
             setPosY(novoY);
         }else {
-            throw new IllegalArgumentException("O peão só pode se mover uma cada para frente por jogada!");
+            throw new IllegalArgumentException("O peão só pode se mover uma casa para frente por jogada!");
         }
     }
 
