@@ -7,8 +7,8 @@ public class ProfessorDigital extends PessoaDigital{
     protected int nivelAutorizacao;
     protected String setorAutorizacao;
 
-    public ProfessorDigital(String nome, String cpf, String tipo, int codigoFuncional, String especialidade, int nivelAutorizacao, String setorAutorizacao) {
-        super(nome, cpf, tipo);
+    public ProfessorDigital(String nome, String cpf, int codigoFuncional, String especialidade, int nivelAutorizacao, String setorAutorizacao) {
+        super(nome, cpf);
         this.codigoFuncional = codigoFuncional;
         this.especialidade = especialidade;
         this.nivelAutorizacao = nivelAutorizacao;

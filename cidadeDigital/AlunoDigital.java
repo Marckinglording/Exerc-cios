@@ -7,9 +7,9 @@ public class AlunoDigital extends PessoaDigital{
     protected int nivelEnergia;
     protected int creditosComputacionais;
 
-    public AlunoDigital(String nome, String cpf, String tipo, String areaAprendizado, String matriculaDigital, int nivelEnergia, int creditosComputacionais) {
-        super(nome, cpf, tipo);
-        this.tipo = "aluno";
+    public AlunoDigital(String nome, String cpf, String areaAprendizado, String matriculaDigital, int nivelEnergia, int creditosComputacionais) {
+        super(nome, cpf);
+
         this.areaAprendizado = areaAprendizado;
         this.matriculaDigital = matriculaDigital;
         this.nivelEnergia = nivelEnergia;
@@ -54,7 +54,7 @@ public class AlunoDigital extends PessoaDigital{
     }
 
     public void setNivelEnergia(int novoNivelEnergia) {
-        this.nivelEnergia += novoNivelEnergia;
+        this.nivelEnergia = novoNivelEnergia;
     }
 
     public int getCreditosComputacionais() {
@@ -62,7 +62,7 @@ public class AlunoDigital extends PessoaDigital{
     }
 
     public void setCreditosComputacionais(int novosCreditosComputacionais) {
-        this.creditosComputacionais += novosCreditosComputacionais;
+        this.creditosComputacionais = novosCreditosComputacionais;
     }
     
 }

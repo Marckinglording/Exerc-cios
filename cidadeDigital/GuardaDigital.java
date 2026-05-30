@@ -7,8 +7,8 @@ public class GuardaDigital extends PessoaDigital{
     protected String setorMonitorado;
     protected String statusPatrulha;
 
-    public GuardaDigital(String nome, String cpf, String tipo, String identificacaoMilitar, int nivelSeguranca, String setorMonitorado, String statusPatrulha) {
-        super(nome, cpf, tipo);
+    public GuardaDigital(String nome, String cpf, String identificacaoMilitar, int nivelSeguranca, String setorMonitorado, String statusPatrulha) {
+        super(nome, cpf);
         this.identificacaoMilitar = identificacaoMilitar;
         this.nivelSeguranca = nivelSeguranca;
         this.setorMonitorado = setorMonitorado;
