@@ -19,8 +19,8 @@ public class GuardaDigital extends PessoaDigital{
 
     }
 
-    public void emitirAlertas() {
-        
+    public void emitirAlertar() {
+
     }
 
 }
