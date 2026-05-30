@@ -1,6 +1,6 @@
 package cidadeDigital;
 
-public class PessoaDigital {
+public abstract class PessoaDigital {
 
     protected String nome;
     protected String cpf;
@@ -9,13 +9,21 @@ public class PessoaDigital {
     public PessoaDigital(String nome, String cpf, String tipo) {
         this.nome = nome;
         this.cpf = cpf;
-        this.cpf = tipo;
+        this.tipo = tipo;
     }
 
     public void exibirInformacoes() {
-        System.out.println("Informações do " + tipo + ":");
+        System.out.println("\nInformações do " + tipo + ":\n");
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
     }
 
 }
